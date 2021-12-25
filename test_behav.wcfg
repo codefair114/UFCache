@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="30000001fs"></ZoomEndTime>
+      <Cursor1Time time="30000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="145"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject fp_name="/test/RESET_0" type="logic">
+      <obj_property name="ElementShortName">RESET_0</obj_property>
+      <obj_property name="ObjectShortName">RESET_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/CLOCK_0" type="logic">
+      <obj_property name="ElementShortName">CLOCK_0</obj_property>
+      <obj_property name="ObjectShortName">CLOCK_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/Data_Memory_0/inputAddress" type="array">
+      <obj_property name="ElementShortName">inputAddress[63:0]</obj_property>
+      <obj_property name="ObjectShortName">inputAddress[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/Data_Memory_0/inputData" type="array">
+      <obj_property name="ElementShortName">inputData[63:0]</obj_property>
+      <obj_property name="ObjectShortName">inputData[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/Data_Memory_0/CONTROL_MemWrite" type="logic">
+      <obj_property name="ElementShortName">CONTROL_MemWrite</obj_property>
+      <obj_property name="ObjectShortName">CONTROL_MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/Data_Memory_0/CONTROL_MemRead" type="logic">
+      <obj_property name="ElementShortName">CONTROL_MemRead</obj_property>
+      <obj_property name="ObjectShortName">CONTROL_MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/Data_Memory_0/outputData" type="array">
+      <obj_property name="ElementShortName">outputData[63:0]</obj_property>
+      <obj_property name="ObjectShortName">outputData[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/hcm_0/WE" type="logic">
+      <obj_property name="ElementShortName">WE</obj_property>
+      <obj_property name="ObjectShortName">WE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/hcm_0/RE" type="logic">
+      <obj_property name="ElementShortName">RE</obj_property>
+      <obj_property name="ObjectShortName">RE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/hcm_0/address" type="array">
+      <obj_property name="ElementShortName">address[63:0]</obj_property>
+      <obj_property name="ObjectShortName">address[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/hcm_0/value" type="array">
+      <obj_property name="ElementShortName">value[63:0]</obj_property>
+      <obj_property name="ObjectShortName">value[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/hcm_0/C0" type="logic">
+      <obj_property name="ElementShortName">C0</obj_property>
+      <obj_property name="ObjectShortName">C0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/hcm_0/C1" type="logic">
+      <obj_property name="ElementShortName">C1</obj_property>
+      <obj_property name="ObjectShortName">C1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/hcm_0/C2" type="logic">
+      <obj_property name="ElementShortName">C2</obj_property>
+      <obj_property name="ObjectShortName">C2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/hcm_0/C3" type="logic">
+      <obj_property name="ElementShortName">C3</obj_property>
+      <obj_property name="ObjectShortName">C3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/hcm_0/valueout" type="array">
+      <obj_property name="ElementShortName">valueout[63:0]</obj_property>
+      <obj_property name="ObjectShortName">valueout[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/hcm_0/C0out" type="logic">
+      <obj_property name="ElementShortName">C0out</obj_property>
+      <obj_property name="ObjectShortName">C0out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/hcm_0/C1out" type="logic">
+      <obj_property name="ElementShortName">C1out</obj_property>
+      <obj_property name="ObjectShortName">C1out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/hcm_0/C2out" type="logic">
+      <obj_property name="ElementShortName">C2out</obj_property>
+      <obj_property name="ObjectShortName">C2out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/design_ufcache_i/hcm_0/C3out" type="logic">
+      <obj_property name="ElementShortName">C3out</obj_property>
+      <obj_property name="ObjectShortName">C3out</obj_property>
+   </wvobject>
+</wave_config>

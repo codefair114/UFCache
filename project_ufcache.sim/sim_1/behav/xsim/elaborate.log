@@ -1,0 +1,79 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 548fbce0ca244968a99e141cf61c9baf --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:214]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:215]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:216]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:217]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:218]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:219]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:220]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:221]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:226]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:227]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:228]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:229]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:230]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:231]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:232]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:233]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:238]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:239]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:240]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:241]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:242]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:243]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:244]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:245]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:250]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:251]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:252]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:253]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:254]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:255]
+WARNING: [VRFC 10-3283] element index 63 into 'tags' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:256]
+WARNING: [VRFC 10-3283] element index 63 into 'values' is out of bounds [C:/Users/alexandra.chirita98/Documents/project_ufcache/project_ufcache.srcs/sources_1/new/hcm.v:257]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.HazardDetection
+Compiling module xil_defaultlib.ARM_Control
+Compiling module xil_defaultlib.Control_Mux
+Compiling module xil_defaultlib.ID_Mux
+Compiling module xil_defaultlib.Registers
+Compiling module xil_defaultlib.SignExtend
+Compiling module xil_defaultlib.IDEX
+Compiling module xil_defaultlib.Shift_Left
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.ForwardingUnit
+Compiling module xil_defaultlib.Forward_ALU_Mux
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.ALU_Mux
+Compiling module xil_defaultlib.EXMEM
+Compiling module xil_defaultlib.Branch
+Compiling module xil_defaultlib.MEMWB
+Compiling module xil_defaultlib.WB_Mux
+Compiling module xil_defaultlib.ARM_CPU
+Compiling module xil_defaultlib.design_ufcache_ARM_CPU_0_0
+Compiling module xil_defaultlib.C
+Compiling module xil_defaultlib.design_ufcache_C_0_0
+Compiling module xil_defaultlib.design_ufcache_C_1_0
+Compiling module xil_defaultlib.design_ufcache_C_2_0
+Compiling module xil_defaultlib.design_ufcache_C_3_0
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.design_ufcache_Data_Memory_0_0
+Compiling module xil_defaultlib.IC
+Compiling module xil_defaultlib.design_ufcache_IC_0_0
+Compiling module xil_defaultlib.check
+Compiling module xil_defaultlib.design_ufcache_check_0_0
+Compiling module xil_defaultlib.hcm
+Compiling module xil_defaultlib.design_ufcache_hcm_0_1
+Compiling module xil_defaultlib.design_ufcache
+Compiling module xil_defaultlib.design_ufcache_wrapper
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav

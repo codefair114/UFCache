@@ -1,0 +1,38 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 6.8.11  2018-08-07 bk=1.4403 VDI=40 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port CLOCK_0 -pg 1 -y 60 -defaultsOSRD
+preplace port RESET_0 -pg 1 -y 90 -defaultsOSRD
+preplace inst C_2 -pg 1 -lvl 2 -y -400 -defaultsOSRD
+preplace inst C_3 -pg 1 -lvl 2 -y -300 -defaultsOSRD
+preplace inst check_0 -pg 1 -lvl 2 -y -140 -defaultsOSRD
+preplace inst hcm_0 -pg 1 -lvl 1 -y -380 -defaultsOSRD
+preplace inst IC_0 -pg 1 -lvl 1 -y 160 -defaultsOSRD
+preplace inst Data_Memory_0 -pg 1 -lvl 1 -y 0 -defaultsOSRD
+preplace inst C_0 -pg 1 -lvl 2 -y -600 -defaultsOSRD
+preplace inst ARM_CPU_0 -pg 1 -lvl 3 -y 100 -defaultsOSRD
+preplace inst C_1 -pg 1 -lvl 2 -y -500 -defaultsOSRD
+preplace netloc ARM_CPU_0_control_memread_out 1 0 4 -60 -130 890 -20 NJ -20 1600J
+preplace netloc hcm_0_C0out 1 1 1 840
+preplace netloc check_0_dataout 1 2 1 1190
+preplace netloc RESET_0_1 1 0 3 -50J 100 870J 70 NJ
+preplace netloc IC_0_instruction_out 1 1 2 N 160 1210
+preplace netloc C_2_val 1 0 3 -10 -230 NJ -230 1190
+preplace netloc ARM_CPU_0_mem_address_out 1 0 4 -50 -100 850 0 NJ 0 1570J
+preplace netloc hcm_0_C2out 1 1 1 890
+preplace netloc C_0_val 1 0 3 -20 -240 NJ -240 1200
+preplace netloc Data_Memory_0_outputData 1 1 1 840
+preplace netloc CLOCK_0_1 1 0 3 -20J 90 NJ 90 NJ
+preplace netloc ARM_CPU_0_PC 1 0 4 0J -90 860J -60 N -60 1580
+preplace netloc hcm_0_valueout 1 1 1 900
+preplace netloc ARM_CPU_0_mem_data_out 1 0 4 -40J -110 880J -70 N -70 1610
+preplace netloc hcm_0_C1out 1 1 1 850
+preplace netloc hcm_0_C3out 1 1 1 850
+preplace netloc C_3_val 1 0 3 0 -220 NJ -220 1180
+preplace netloc C_1_val 1 0 3 -30 -210 NJ -210 1210
+preplace netloc ARM_CPU_0_control_memwrite_out 1 0 4 -70 -120 870 -10 NJ -10 1590J
+levelinfo -pg 1 -90 670 1040 1390 1690 -top -660 -bot 380
+"
+}
+0

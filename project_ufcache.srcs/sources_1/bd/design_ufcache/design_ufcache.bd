@@ -1,0 +1,450 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x950E5DE92F5009BA",
+      "device": "xc7a100tcsg324-1",
+      "name": "design_ufcache",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "ARM_CPU_0": "",
+      "Data_Memory_0": "",
+      "IC_0": "",
+      "check_0": "",
+      "hcm_0": "",
+      "C_0": "",
+      "C_1": "",
+      "C_2": "",
+      "C_3": ""
+    },
+    "ports": {
+      "RESET_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "CLOCK_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "RESET_0",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_ufcache_CLOCK_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "components": {
+      "ARM_CPU_0": {
+        "vlnv": "xilinx.com:module_ref:ARM_CPU:1.0",
+        "xci_name": "design_ufcache_ARM_CPU_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ARM_CPU",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "RESET": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "CLOCK": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "RESET",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_ufcache_CLOCK_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "IC": {
+            "direction": "I",
+            "left": "31",
+            "right": "0"
+          },
+          "mem_data_in": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "PC": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "mem_address_out": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "mem_data_out": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "control_memwrite_out": {
+            "direction": "O"
+          },
+          "control_memread_out": {
+            "direction": "O"
+          }
+        }
+      },
+      "Data_Memory_0": {
+        "vlnv": "xilinx.com:module_ref:Data_Memory:1.0",
+        "xci_name": "design_ufcache_Data_Memory_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Data_Memory",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "inputAddress": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "inputData": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "CONTROL_MemWrite": {
+            "direction": "I"
+          },
+          "CONTROL_MemRead": {
+            "direction": "I"
+          },
+          "outputData": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          }
+        }
+      },
+      "IC_0": {
+        "vlnv": "xilinx.com:module_ref:IC:1.0",
+        "xci_name": "design_ufcache_IC_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "IC",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "PC_in": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "instruction_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
+      },
+      "check_0": {
+        "vlnv": "xilinx.com:module_ref:check:1.0",
+        "xci_name": "design_ufcache_check_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "check",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "cachedata": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "dataout": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          }
+        }
+      },
+      "hcm_0": {
+        "vlnv": "xilinx.com:module_ref:hcm:1.0",
+        "xci_name": "design_ufcache_hcm_0_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "hcm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "WE": {
+            "direction": "I"
+          },
+          "RE": {
+            "direction": "I"
+          },
+          "address": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "value": {
+            "direction": "I",
+            "left": "63",
+            "right": "0"
+          },
+          "C0": {
+            "direction": "I"
+          },
+          "C1": {
+            "direction": "I"
+          },
+          "C2": {
+            "direction": "I"
+          },
+          "C3": {
+            "direction": "I"
+          },
+          "valueout": {
+            "direction": "O",
+            "left": "63",
+            "right": "0"
+          },
+          "C0out": {
+            "direction": "O"
+          },
+          "C1out": {
+            "direction": "O"
+          },
+          "C2out": {
+            "direction": "O"
+          },
+          "C3out": {
+            "direction": "O"
+          }
+        }
+      },
+      "C_0": {
+        "vlnv": "xilinx.com:module_ref:C:1.0",
+        "xci_name": "design_ufcache_C_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "C",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "E": {
+            "direction": "I"
+          },
+          "val": {
+            "direction": "O"
+          }
+        }
+      },
+      "C_1": {
+        "vlnv": "xilinx.com:module_ref:C:1.0",
+        "xci_name": "design_ufcache_C_1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "C",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "E": {
+            "direction": "I"
+          },
+          "val": {
+            "direction": "O"
+          }
+        }
+      },
+      "C_2": {
+        "vlnv": "xilinx.com:module_ref:C:1.0",
+        "xci_name": "design_ufcache_C_2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "C",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "E": {
+            "direction": "I"
+          },
+          "val": {
+            "direction": "O"
+          }
+        }
+      },
+      "C_3": {
+        "vlnv": "xilinx.com:module_ref:C:1.0",
+        "xci_name": "design_ufcache_C_3_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "C",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "E": {
+            "direction": "I"
+          },
+          "val": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "IC_0_instruction_out": {
+        "ports": [
+          "IC_0/instruction_out",
+          "ARM_CPU_0/IC"
+        ]
+      },
+      "ARM_CPU_0_PC": {
+        "ports": [
+          "ARM_CPU_0/PC",
+          "IC_0/PC_in"
+        ]
+      },
+      "ARM_CPU_0_mem_address_out": {
+        "ports": [
+          "ARM_CPU_0/mem_address_out",
+          "Data_Memory_0/inputAddress",
+          "hcm_0/address"
+        ]
+      },
+      "ARM_CPU_0_control_memwrite_out": {
+        "ports": [
+          "ARM_CPU_0/control_memwrite_out",
+          "Data_Memory_0/CONTROL_MemWrite",
+          "hcm_0/WE"
+        ]
+      },
+      "ARM_CPU_0_control_memread_out": {
+        "ports": [
+          "ARM_CPU_0/control_memread_out",
+          "Data_Memory_0/CONTROL_MemRead",
+          "hcm_0/RE"
+        ]
+      },
+      "RESET_0_1": {
+        "ports": [
+          "RESET_0",
+          "ARM_CPU_0/RESET"
+        ]
+      },
+      "CLOCK_0_1": {
+        "ports": [
+          "CLOCK_0",
+          "ARM_CPU_0/CLOCK"
+        ]
+      },
+      "ARM_CPU_0_mem_data_out": {
+        "ports": [
+          "ARM_CPU_0/mem_data_out",
+          "Data_Memory_0/inputData",
+          "hcm_0/value"
+        ]
+      },
+      "Data_Memory_0_outputData": {
+        "ports": [
+          "Data_Memory_0/outputData",
+          "check_0/data"
+        ]
+      },
+      "check_0_dataout": {
+        "ports": [
+          "check_0/dataout",
+          "ARM_CPU_0/mem_data_in"
+        ]
+      },
+      "C_0_val": {
+        "ports": [
+          "C_0/val",
+          "hcm_0/C0"
+        ]
+      },
+      "C_1_val": {
+        "ports": [
+          "C_1/val",
+          "hcm_0/C1"
+        ]
+      },
+      "C_2_val": {
+        "ports": [
+          "C_2/val",
+          "hcm_0/C2"
+        ]
+      },
+      "C_3_val": {
+        "ports": [
+          "C_3/val",
+          "hcm_0/C3"
+        ]
+      },
+      "hcm_0_valueout": {
+        "ports": [
+          "hcm_0/valueout",
+          "check_0/cachedata"
+        ]
+      },
+      "hcm_0_C0out": {
+        "ports": [
+          "hcm_0/C0out",
+          "C_0/E"
+        ]
+      },
+      "hcm_0_C1out": {
+        "ports": [
+          "hcm_0/C1out",
+          "C_1/E"
+        ]
+      },
+      "hcm_0_C2out": {
+        "ports": [
+          "hcm_0/C2out",
+          "C_2/E"
+        ]
+      },
+      "hcm_0_C3out": {
+        "ports": [
+          "hcm_0/C3out",
+          "C_3/E"
+        ]
+      }
+    }
+  }
+}

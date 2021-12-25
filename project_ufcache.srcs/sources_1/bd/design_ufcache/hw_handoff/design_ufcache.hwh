@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jan 27 06:19:42 2021" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_ufcache" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="RESET_0" SIGIS="rst" SIGNAME="External_Ports_RESET_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARM_CPU_0" PORT="RESET"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLOCK_0" SIGIS="clk" SIGNAME="External_Ports_CLOCK_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ARM_CPU_0" PORT="CLOCK"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/ARM_CPU_0" HWVERSION="1.0" INSTANCE="ARM_CPU_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ARM_CPU" VLNV="xilinx.com:module_ref:ARM_CPU:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_ufcache_ARM_CPU_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="RESET" SIGIS="rst" SIGNAME="External_Ports_RESET_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RESET_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLOCK" SIGIS="clk" SIGNAME="External_Ports_CLOCK_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLOCK_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="IC" RIGHT="0" SIGIS="undef" SIGNAME="IC_0_instruction_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IC_0" PORT="instruction_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="mem_data_in" RIGHT="0" SIGIS="undef" SIGNAME="check_0_dataout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="dataout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="PC" RIGHT="0" SIGIS="undef" SIGNAME="ARM_CPU_0_PC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="IC_0" PORT="PC_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="mem_address_out" RIGHT="0" SIGIS="undef" SIGNAME="ARM_CPU_0_mem_address_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Data_Memory_0" PORT="inputAddress"/>
+            <CONNECTION INSTANCE="hcm_0" PORT="address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="mem_data_out" RIGHT="0" SIGIS="undef" SIGNAME="ARM_CPU_0_mem_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Data_Memory_0" PORT="inputData"/>
+            <CONNECTION INSTANCE="hcm_0" PORT="value"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="control_memwrite_out" SIGIS="undef" SIGNAME="ARM_CPU_0_control_memwrite_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Data_Memory_0" PORT="CONTROL_MemWrite"/>
+            <CONNECTION INSTANCE="hcm_0" PORT="WE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="control_memread_out" SIGIS="undef" SIGNAME="ARM_CPU_0_control_memread_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Data_Memory_0" PORT="CONTROL_MemRead"/>
+            <CONNECTION INSTANCE="hcm_0" PORT="RE"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/C_0" HWVERSION="1.0" INSTANCE="C_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="C" VLNV="xilinx.com:module_ref:C:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_ufcache_C_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="E" SIGIS="undef" SIGNAME="hcm_0_C0out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hcm_0" PORT="C0out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="val" SIGIS="undef" SIGNAME="C_0_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hcm_0" PORT="C0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/C_1" HWVERSION="1.0" INSTANCE="C_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="C" VLNV="xilinx.com:module_ref:C:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_ufcache_C_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="E" SIGIS="undef" SIGNAME="hcm_0_C1out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hcm_0" PORT="C1out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="val" SIGIS="undef" SIGNAME="C_1_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hcm_0" PORT="C1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/C_2" HWVERSION="1.0" INSTANCE="C_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="C" VLNV="xilinx.com:module_ref:C:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_ufcache_C_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="E" SIGIS="undef" SIGNAME="hcm_0_C2out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hcm_0" PORT="C2out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="val" SIGIS="undef" SIGNAME="C_2_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hcm_0" PORT="C2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/C_3" HWVERSION="1.0" INSTANCE="C_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="C" VLNV="xilinx.com:module_ref:C:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_ufcache_C_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="E" SIGIS="undef" SIGNAME="hcm_0_C3out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hcm_0" PORT="C3out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="val" SIGIS="undef" SIGNAME="C_3_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hcm_0" PORT="C3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/Data_Memory_0" HWVERSION="1.0" INSTANCE="Data_Memory_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Data_Memory" VLNV="xilinx.com:module_ref:Data_Memory:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_ufcache_Data_Memory_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="63" NAME="inputAddress" RIGHT="0" SIGIS="undef" SIGNAME="ARM_CPU_0_mem_address_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_CPU_0" PORT="mem_address_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="inputData" RIGHT="0" SIGIS="undef" SIGNAME="ARM_CPU_0_mem_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_CPU_0" PORT="mem_data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CONTROL_MemWrite" SIGIS="undef" SIGNAME="ARM_CPU_0_control_memwrite_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_CPU_0" PORT="control_memwrite_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CONTROL_MemRead" SIGIS="undef" SIGNAME="ARM_CPU_0_control_memread_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_CPU_0" PORT="control_memread_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="outputData" RIGHT="0" SIGIS="undef" SIGNAME="Data_Memory_0_outputData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="data"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/IC_0" HWVERSION="1.0" INSTANCE="IC_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="IC" VLNV="xilinx.com:module_ref:IC:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_ufcache_IC_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="63" NAME="PC_in" RIGHT="0" SIGIS="undef" SIGNAME="ARM_CPU_0_PC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_CPU_0" PORT="PC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="instruction_out" RIGHT="0" SIGIS="undef" SIGNAME="IC_0_instruction_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_CPU_0" PORT="IC"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/check_0" HWVERSION="1.0" INSTANCE="check_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="check" VLNV="xilinx.com:module_ref:check:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_ufcache_check_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="63" NAME="data" RIGHT="0" SIGIS="undef" SIGNAME="Data_Memory_0_outputData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Data_Memory_0" PORT="outputData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="cachedata" RIGHT="0" SIGIS="undef" SIGNAME="hcm_0_valueout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="hcm_0" PORT="valueout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="dataout" RIGHT="0" SIGIS="undef" SIGNAME="check_0_dataout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_CPU_0" PORT="mem_data_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/hcm_0" HWVERSION="1.0" INSTANCE="hcm_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="hcm" VLNV="xilinx.com:module_ref:hcm:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="BLOCKSIZE" VALUE="4"/>
+        <PARAMETER NAME="BLOCKNUM" VALUE="4"/>
+        <PARAMETER NAME="BITS" VALUE="64"/>
+        <PARAMETER NAME="ADDR" VALUE="64"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_ufcache_hcm_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="WE" SIGIS="undef" SIGNAME="ARM_CPU_0_control_memwrite_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_CPU_0" PORT="control_memwrite_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="RE" SIGIS="undef" SIGNAME="ARM_CPU_0_control_memread_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_CPU_0" PORT="control_memread_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="address" RIGHT="0" SIGIS="undef" SIGNAME="ARM_CPU_0_mem_address_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_CPU_0" PORT="mem_address_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="63" NAME="value" RIGHT="0" SIGIS="undef" SIGNAME="ARM_CPU_0_mem_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ARM_CPU_0" PORT="mem_data_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C0" SIGIS="undef" SIGNAME="C_0_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_0" PORT="val"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C1" SIGIS="undef" SIGNAME="C_1_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_1" PORT="val"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C2" SIGIS="undef" SIGNAME="C_2_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_2" PORT="val"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="C3" SIGIS="undef" SIGNAME="C_3_val">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_3" PORT="val"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="valueout" RIGHT="0" SIGIS="undef" SIGNAME="hcm_0_valueout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="check_0" PORT="cachedata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C0out" SIGIS="undef" SIGNAME="hcm_0_C0out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_0" PORT="E"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C1out" SIGIS="undef" SIGNAME="hcm_0_C1out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_1" PORT="E"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C2out" SIGIS="undef" SIGNAME="hcm_0_C2out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_2" PORT="E"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="C3out" SIGIS="undef" SIGNAME="hcm_0_C3out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="C_3" PORT="E"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

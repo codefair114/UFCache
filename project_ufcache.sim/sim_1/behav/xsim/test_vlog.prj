@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_ufcache.srcs/sources_1/imports/sources_1/imports/Pipeline-With-Hazard-And-Forwarding/ARM_CPU.v" \
+"../../../../project_ufcache.srcs/sources_1/imports/sources_1/new/check.v" \
+"../../../../project_ufcache.srcs/sources_1/new/hcm.v" \
+"../../../../project_ufcache.srcs/sources_1/imports/sources_1/new/C.v" \
+"../../../../project_ufcache.ip_user_files/bd/design_ufcache/ip/design_ufcache_ARM_CPU_0_0/sim/design_ufcache_ARM_CPU_0_0.v" \
+"../../../../project_ufcache.ip_user_files/bd/design_ufcache/ip/design_ufcache_Data_Memory_0_0/sim/design_ufcache_Data_Memory_0_0.v" \
+"../../../../project_ufcache.ip_user_files/bd/design_ufcache/ip/design_ufcache_IC_0_0/sim/design_ufcache_IC_0_0.v" \
+"../../../../project_ufcache.ip_user_files/bd/design_ufcache/sim/design_ufcache.v" \
+"../../../../project_ufcache.ip_user_files/bd/design_ufcache/ip/design_ufcache_check_0_0/sim/design_ufcache_check_0_0.v" \
+"../../../../project_ufcache.ip_user_files/bd/design_ufcache/ip/design_ufcache_hcm_0_1/sim/design_ufcache_hcm_0_1.v" \
+"../../../../project_ufcache.ip_user_files/bd/design_ufcache/ip/design_ufcache_C_0_0/sim/design_ufcache_C_0_0.v" \
+"../../../../project_ufcache.ip_user_files/bd/design_ufcache/ip/design_ufcache_C_1_0/sim/design_ufcache_C_1_0.v" \
+"../../../../project_ufcache.ip_user_files/bd/design_ufcache/ip/design_ufcache_C_2_0/sim/design_ufcache_C_2_0.v" \
+"../../../../project_ufcache.ip_user_files/bd/design_ufcache/ip/design_ufcache_C_3_0/sim/design_ufcache_C_3_0.v" \
+"../../../../project_ufcache.srcs/sources_1/bd/design_ufcache/hdl/design_ufcache_wrapper.v" \
+"../../../../project_ufcache.srcs/sim_1/imports/new/test.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

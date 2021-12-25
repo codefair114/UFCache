@@ -1,0 +1,11 @@
+design_ufcache_ARM_CPU_0_0.v,verilog,xil_defaultlib,../../../bd/design_ufcache/ip/design_ufcache_ARM_CPU_0_0/sim/design_ufcache_ARM_CPU_0_0.v,
+design_ufcache_Data_Memory_0_0.v,verilog,xil_defaultlib,../../../bd/design_ufcache/ip/design_ufcache_Data_Memory_0_0/sim/design_ufcache_Data_Memory_0_0.v,
+design_ufcache_IC_0_0.v,verilog,xil_defaultlib,../../../bd/design_ufcache/ip/design_ufcache_IC_0_0/sim/design_ufcache_IC_0_0.v,
+design_ufcache.v,verilog,xil_defaultlib,../../../bd/design_ufcache/sim/design_ufcache.v,
+design_ufcache_check_0_0.v,verilog,xil_defaultlib,../../../bd/design_ufcache/ip/design_ufcache_check_0_0/sim/design_ufcache_check_0_0.v,
+design_ufcache_hcm_0_1.v,verilog,xil_defaultlib,../../../bd/design_ufcache/ip/design_ufcache_hcm_0_1/sim/design_ufcache_hcm_0_1.v,
+design_ufcache_C_0_0.v,verilog,xil_defaultlib,../../../bd/design_ufcache/ip/design_ufcache_C_0_0/sim/design_ufcache_C_0_0.v,
+design_ufcache_C_1_0.v,verilog,xil_defaultlib,../../../bd/design_ufcache/ip/design_ufcache_C_1_0/sim/design_ufcache_C_1_0.v,
+design_ufcache_C_2_0.v,verilog,xil_defaultlib,../../../bd/design_ufcache/ip/design_ufcache_C_2_0/sim/design_ufcache_C_2_0.v,
+design_ufcache_C_3_0.v,verilog,xil_defaultlib,../../../bd/design_ufcache/ip/design_ufcache_C_3_0/sim/design_ufcache_C_3_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v
